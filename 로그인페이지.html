@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0; padding: 0;}
+        li {list-style: none;}
+        a {text-decoration: none; color: #333; display: block;}
+
+        body {background:url(img/bg01.png) center center / cover no-repeat;
+            font-family: 'Noto Sans KR', sans-serif;}
+        fieldset {border: 0;}
+        legend {
+            position: absolute;
+            left: -9999999px;
+        }
+        .wrap {
+            width: 720px;
+            height: 577px;
+            background:#fff;
+            margin: 0 auto;
+            margin-top: 252px;
+            border-radius: 10%;
+            /* display:inline-block; */
+            box-shadow: 10px 10px 10px rgba(0,0,0, .3);
+        }
+        .wrap h1 {
+            text-align: center;
+            padding: 80px 0 0 0;
+            margin-bottom: 60px;
+        }
+        .wrap label {
+            position: absolute;
+            left: -999999px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 80%;
+            height: 50px;
+            margin: 10px auto;
+            border-radius: 10px;
+            background: #D3D9FC;
+            border: #D3D9FC;
+        }
+        input[type="text"]:focus, input[type="password"]:focus {
+        border: 1px solid transparent;
+        outline: 1px solid #8092f8;
+        }
+
+        .text1 {
+            font-size: 13px;
+        }
+        button {
+            width: 80%;
+            height: 50px;
+            border-radius: 10px;
+            background: #4765FF;
+            color: #fff;
+            border: #4765FF;
+            margin-top: 70px;
+        }
+        .box {text-align: center;}
+        .box p {
+            margin-left: -362px;
+            color: #707070
+        }
+
+        .box .sns {
+            margin-left: -500px;
+            margin-top: 60px;
+            color: #707070;
+        }
+        .icon_01 {position: relative;}
+        .icon_01 img {
+            width: 45px;
+            position: absolute;
+            top: -33px;
+            left: 170px;
+        }
+        .icon_02 {position: relative;}
+        .icon_02 img {
+            width: 45px;
+            position: absolute;
+            top: -33px;
+            left: 230px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="POST">
+            <h1>
+                <a href="#">Welcome</a>
+            </h1>
+            <fieldset>
+                <legend>로그인 페이지</legend>
+                <div class="box">
+                    <div>
+                        <label for="id">로그인</label>
+                        <input type="text" id="id" placeholder="아이디">
+                    </div>
+                    <div>
+                        <label for="pass">비밀번호</label>
+                        <input type="password" id="pass" placeholder="비밀번호">
+                    </div>
+                    <p class="text1">아이디 찾기 / 비밀번호 찾기 / 회원가입 </p>
+                    <button>로그인</button>
+                    <p class="sns">소셜 로그인</p>
+                </div>
+                <div class="icon_01">
+                    <img src="img/naver.png" alt="네이버" />
+                </div>
+                <div class="icon_02">
+                    <img src="img/kakao.png" alt="카카오" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
